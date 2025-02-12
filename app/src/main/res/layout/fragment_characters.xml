@@ -18,7 +18,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             tools:itemCount="100"
-            tools:listitem="@layout/todo_item_list" />
+            tools:listitem="@layout/character_item_list" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

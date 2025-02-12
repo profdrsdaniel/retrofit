@@ -6,20 +6,21 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
-import com.example.retrofit.R
+import com.example.retrofit.databinding.FragmentCharactersBinding
 import com.example.retrofit.ui.adapter.CharacterAdapter
 import com.example.retrofit.ui.viewmodel.CharacterViewModel
 
 class CharactersFragment : Fragment() {
-    private lateinit var binding: Fragment
+    private lateinit var binding: FragmentCharactersBinding
     private lateinit var adapter: CharacterAdapter
-    private val todoViewModel: CharacterViewModel by viewModels()
+    private val characterViewModel: CharacterViewModel by viewModels()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
-        return inflater.inflate(R.layout.fragment_characters, container, false)
+    ): View {
+        binding = FragmentCharactersBinding.inflate(inflater, container, false)
+        return binding.root
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
