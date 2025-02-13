@@ -63,7 +63,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:padding="8dp"
-                    android:text="@{character.location.name}"
+                    android:text="@{character.species}"
                     android:textAlignment="textStart"
                     android:textColor="#5e5f5f"
                     android:textSize="18sp"
